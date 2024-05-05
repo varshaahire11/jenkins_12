@@ -1,6 +1,4 @@
 FROM ubuntu/apache2
-WORKDIR /var/www/html
-RUN rm index.html
-RUN touch index.html
+WORKDIR /var/www/htmL
 RUN echo "welcome to hpcsa" > index.html
 CMD ["apache2ctl","-D","FOREGROUND"]
